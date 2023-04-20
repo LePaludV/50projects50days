@@ -1,0 +1,35 @@
+.card{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 5vw;
+    border-radius: 2em;
+    margin: 1em;
+    transition: all 700ms ease-in;
+}
+#App{
+    display: flex;
+    margin: auto;
+    width: fit-content;
+}
+
+
+.active{
+    width: calc(80vw - (5*5vw));
+}
+.active>.card-title{
+    color: white;
+    position: sticky;
+    top: 100%;
+    margin-left: inherit;
+    font-size: larger;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: xx-large;
+    transition: opacity 0.3s ease-in 0.4s;
+    opacity: 1;
+}
+.card-title{
+    opacity: 0;
+}
