@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(116, 89, 232);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#input {
+    border: 0;
+    height: 38px;
+    padding: 5px;
+    width: 0px;
+    transition: width 0.3s ease;
+}
+
+#input:focus {
+    outline: none;
+}
+
+#logo {
+    border: 0;
+    position: absolute;
+    background-color: #fff;
+    padding: 1em;
+    display: flex;
+    transition: transform 0.3s ease;
+
+}
+
+#logo svg {
+    stroke-width: 0.5;
+    stroke: grey;
+    scale: 1.5;
+}
+
+#logo:hover {
+    position: absolute;
+    background-color: #fff;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.active {
+    width: 200px !important;
+}
+
+.activeLogo {
+    transform: translateX(129px);
+
+}
